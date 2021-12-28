@@ -234,7 +234,8 @@ a {
 }
 
 .latest_area h1 {
-  font-weight: 500;
+  font-weight: 800;
+  letter-spacing: 1px;
   padding-bottom: 70px;
   margin-bottom: 50px;
 }
@@ -257,7 +258,7 @@ a {
   width: 100%;
   min-height: 100vh;
   background-image: url(images/footer-bg.png);
-  background-repeat: no repeat;
+  background-repeat: no-repeat;
   background-size: cover;
   padding-bottom:100px;
 }
@@ -276,18 +277,20 @@ a {
   margin-top: 50px;
   text-align: center;
   margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .upper h6 {
   font-size: 12px;
   text-align: center;
-  color: darkgray;
+  color: rgb(73, 70, 70);
 }
 
 .upper p {
   font-size: 14px;
   text-align: center;
-  color: darkgray;
+  color: #000;
   width: 500px;
   text-align: justify;
   padding-top: 20px;
@@ -304,8 +307,7 @@ a {
   margin-top: 120px;
   margin-left: 420px;
   background-color: #EC4B74;
-  background-image: linear-gradient(45deg green #EC4B74);
-  padding-bottom:30px;
+  padding-bottom:20px;
 }
 .bottom p{
 font-size: 12px;
