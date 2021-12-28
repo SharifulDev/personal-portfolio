@@ -1,3 +1,124 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -11,7 +132,7 @@ body {
   background-image: url("images/header-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: hidden;
+  min-height: 100vh;
 }
 .two_column {
   width: 49%;
@@ -27,21 +148,21 @@ body {
 .header-container {
   padding: 15px;
   margin-left: 145px;
-  margin-top: 145px;
+  margin-top: 160px;
 }
 .header-container p {
   margin-bottom: 50px;
 }
 
 .two_column img {
-  width: 83%;
+  width: 80%;
   margin-left: 100px;
 }
 h1:first-child {
   font-size: 35px;
   padding-left: 10px;
   margin-left: 2px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   font-weight: 500;
 }
 
@@ -57,13 +178,13 @@ h1:nth-child(2) {
 
 a {
   text-decoration: none;
-  padding: 10px 30px;
+  padding: 10px 20px;
   border-radius: 5px;
   background: #ec4c7a;
   color: white;
-  font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 1px;
+  font-weight: 700;
+  text-align: center;
+  display: inline-block;
 }
 
 #name {
@@ -71,4 +192,142 @@ a {
   letter-spacing: 1px;
   font-weight: 800;
   margin: 0px;
+}
+
+.biography {
+  background-color: #f8f9fc;
+  padding: 100px 10px 130px 10px;
+  min-height: 100vh;
+  background-image: url(images/biography-bg.png);
+  object-fit: cover;
+}
+
+.middle_first {
+}
+
+.middle_two h1 {
+  font-weight: 800;
+  margin-top: 100px;
+  padding-left: 20px;
+}
+
+.middle_two p {
+  padding: 20px 70px 20px 20px;
+  text-align: justify;
+}
+
+.middle_two a {
+  display: block;
+  width: 160px;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+.latest_area {
+  padding-top: 50px;
+  text-align: center;
+  background-image: url("images/latest-work-bg.png");
+  background-repeat: no repeat;
+  background-size: cover;
+  background-position: left center;
+  min-height: 100vh;
+  margin-bottom: 30px;
+}
+
+.latest_area h1 {
+  font-weight: 500;
+  padding-bottom: 70px;
+  margin-bottom: 50px;
+}
+.first {
+  padding-left: 30px;
+}
+.common {
+  width: 30%;
+  height: 500px;
+  float: left;
+  display: inline-block;
+  overflow: hidden;
+  margin-right: 30px;
+}
+.latest_area img {
+  width: 100%;
+}
+
+.client_area {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(images/footer-bg.png);
+  background-repeat: no repeat;
+  background-size: cover;
+  padding-bottom:100px;
+}
+
+.client_area h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.upper {
+  margin-top: 125px;
+}
+
+.upper h3 {
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.upper h6 {
+  font-size: 12px;
+  text-align: center;
+  color: darkgray;
+}
+
+.upper p {
+  font-size: 14px;
+  text-align: center;
+  color: darkgray;
+  width: 500px;
+  text-align: justify;
+  padding-top: 20px;
+  margin-left: 425px;
+}
+
+.bottom {
+  width: 475px;
+  background-image: linear-gradient(45deg, #EC5196,  #ed4b73);
+  padding: 10px 20px;
+  background-repeat: none;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 120px;
+  margin-left: 420px;
+  background-color: #EC4B74;
+  background-image: linear-gradient(45deg green #EC4B74);
+  padding-bottom:30px;
+}
+.bottom p{
+font-size: 12px;
+margin-bottom:0px;
+color: white;
+}
+.bottom h2{
+  font-size-24px;
+  margin-top:0px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: white;
+}
+
+footer {
+  margin-top:50px;
+}
+footer p {
+  width: 600px;
+  text-align: center;
+  color: #000;
+  font-size: 12px;
+  margin: 0 auto;
+  padding-bottom: 15px;
 }
